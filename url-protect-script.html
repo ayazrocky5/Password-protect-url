@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+<style>
+*{
+
+font-family:serif;
+
+}
+#password{
+width:200px;
+height:30px;
+background:#FEFAC0;
+border:1px solid grey;
+border-radius:2px;
+cursor:pointer;
+padding:10px;
+}
+a{
+text-decoration:none;
+width:auto;
+height:40px;
+text-align:center;
+background: linear-gradient(to top, #05abe0 0%,#53cbf1 60%,#87e0fd 100%); 
+text-decoration:none;
+font-size:20px;
+color:#fff;
+border-radius:5px;
+padding:5px;
+font-weight:700;
+box-shadow:5px 4px 2.5px 2px rgba(0,0,0,0.5);
+cursor:pointer;
+text-shadow:0 6px 6px rgba(0,0,0,1);
+margin-left:40%;
+}
+
+a:hover{
+box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
+
+text-shadow:0 2px 2px rgba(0,0,0,1);
+transition:0.1s;
+}
+</style>
+</head>
+
+<body>
+<center>
+<h2>Enter Password</h2><input id='password' type='password'placeholder='password here...'/></center>
+</br>
+<a href="https://www.google.com/" onclick="javascript:return validatePass()">Start</a>
+<script>
+function validatePass(){
+    if(document.getElementById('password').value == 'rocky'){
+        return true;
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
+}
+</script>
+</body>
+</html>
